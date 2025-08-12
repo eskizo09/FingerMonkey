@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Finger Monkey $FM — Official</title>
+  <meta name="description" content="Finger Monkey $FM — Memecoin on PulseChain" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-left">
+        <h1 id="hero-title" class="brand">Finger Monkey <span style="color:var(--accent)"> $FM</span></h1>
+        <p class="tagline">
+          A cheeky memecoin rising on PulseChain. Community-driven, lightweight tokenomics, and ready for fun. Join the jungle.
+        </p>
+
+        <div class="controls" role="group" aria-label="Primary actions">
+          <div class="copy-wrap" role="region" aria-label="Contract address">
+            <div class="contract" id="contractAddress">
+              0x60Dd286B42f704aB9B89bf34D53DF39Fb89150E6
+            </div>
+            <button class="btn" id="copyBtn">Copy CA</button>
+          </div>
+          <button class="btn buy-btn" id="buyBtn">BUY</button>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="coin">
+          <img src="fm.png" alt="Finger Monkey coin image">
+        </div>
+      </div>
+    </section>
+
+    <!-- ROADMAP -->
+    <section>
+      <h2>Roadmap</h2>
+      <div class="roadmap">
+        <div class="phase">
+          <h4>Phase 1 — Launch</h4>
+          <p>Token launch on pump.tires, bonded, website live, initial liquidity and community channels.</p>
+        </div>
+        <div class="phase">
+          <h4>Phase 2 — Community</h4>
+          <p>Social campaigns, partnerships, meme contests and listings on trackers.</p>
+        </div>
+        <div class="phase">
+          <h4>Phase 3 — Tools</h4>
+          <p>DEX integrations, token stats dashboard, BUY incentives.</p>
+        </div>
+        <div class="phase">
+          <h4>Phase 4 — Growth</h4>
+          <p>Brand merchandise, NFT drops and community-driven features.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div>© <strong>Finger Monkey</strong> — All rights reserved.</div>
+      <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap">
+        <div style="font-size:13px;color:var(--muted)">Donation (PulseChain):</div>
+        <div class="donation" id="donationAddr">
+          0x367bea4d6dc8d708dfb6be42f9415fb19869bd03
+        </div>
+        <button class="btn ghost" id="donateCopy">Copy</button>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+:root{
+  --bg:#0b1020;
+  --accent:#ffcc33;
+  --muted:#94a3b8;
+  --fg:#e6eef8;
+  --glass: rgba(255,255,255,0.04);
+  --maxw:1200px;
+  --radius:14px;
+  --shadow: 0 10px 30px rgba(2,6,23,0.6);
+  --coin-size: 130%; /* Variable para controlar el tamaño de fm.png */
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:Inter,ui-sans-serif,system-ui;
+  background: linear-gradient(180deg, #060712 0%, var(--bg) 100%);
+  color:var(--fg);
+  line-height:1.4;
+}
+
+.container{
+  max-width:var(--maxw);
+  margin:0 auto;
+  padding:32px;
+}
+
+.hero{
+  display:grid;
+  grid-template-columns: 1fr 520px;
+  gap:28px;
+  align-items:center;
+  padding:36px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  margin-bottom:36px;
+}
+
+.brand{
+  font-weight:800;
+  font-size:48px;
+  margin:0 0 10px 0;
+}
+.tagline{
+  color:var(--muted);
+  font-size:16px;
+  margin-bottom:18px;
+  max-width:60ch;
+}
+
+.controls{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+.btn{
+  background:linear-gradient(180deg,var(--accent),#f0b700);
+  color:#0b0b0b;
+  padding:12px 18px;
+  border-radius:10px;
+  font-weight:700;
+  border:none;
+  cursor:pointer;
+}
+.btn.ghost{
+  background:transparent;
+  color:var(--fg);
+  border:1px solid rgba(255,255,255,0.06);
+  padding:10px 14px;
+}
+.btn.buy-btn{
+  padding:16px 24px;
+  font-size:18px;
+}
+
+.copy-wrap{
+  display:flex;
+  gap:8px;
+  background:var(--glass);
+  padding:10px;
+  border-radius:10px;
+}
+.contract{
+  font-family:monospace;
+  font-size:14px;
+  color:var(--muted);
+  max-width:320px;
+  overflow:hidden;
+  white-space:nowrap;
+}
+
+.hero-right{
+  display:flex;
+  justify-content:center;
+}
+.coin{
+  width:360px;
+  height:360px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:linear-gradient(135deg,#1b2436, #0f1724);
+  overflow:hidden; /* Asegura que la imagen no se salga del círculo */
+}
+.coin img{
+  max-width:var(--coin-size); /* Limita el tamaño máximo al valor de --coin-size */
+  max-height:var(--coin-size);
+  object-fit:contain;
+}
+
+.roadmap{
+  margin:28px 0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:14px;
+}
+.phase{
+  background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
+  padding:16px;
+  border-radius:12px;
+}
+
+footer{
+  margin-top:36px;
+  padding:20px 12px;
+  color:var(--muted);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:12px;
+  flex-wrap:wrap;
+  border-top:1px solid rgba(255,255,255,0.02);
+}
+.donation{
+  font-family:monospace;
+  background:rgba(255,255,255,0.02);
+  padding:8px 12px;
+  border-radius:8px;
+}
+
+@media (max-width:980px){
+  .hero{grid-template-columns:1fr; text-align:center}
+  .hero-right{order:-1;margin-bottom:12px}
+  .coin{width:260px;height:260px}
+}
+@media (max-width:520px){
+  .brand{font-size:34px}
+  .coin{width:200px;height:200px}
+}
