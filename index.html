@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Finger Monkey $FM — Official</title>
   <meta name="description" content="Finger Monkey $FM — Memecoin on PulseChain" />
+  <link rel="icon" type="image/png" href="chain.png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -49,7 +50,7 @@
         </div>
         <div class="phase">
           <h4>Phase 3 — Tools</h4>
-          <p>DEX integrations, token stats dashboard, BUY incentives.</p>
+          <p>Explorer integrations, token stats dashboard, liquidity mining incentives.</p>
         </div>
         <div class="phase">
           <h4>Phase 4 — Growth</h4>
@@ -61,12 +62,26 @@
     <!-- FOOTER -->
     <footer>
       <div>© <strong>Finger Monkey</strong> — All rights reserved.</div>
-      <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap">
-        <div style="font-size:13px;color:var(--muted)">Donation (PulseChain):</div>
-        <div class="donation" id="donationAddr">
-          0x367bea4d6dc8d708dfb6be42f9415fb19869bd03
+      <div class="footer-right">
+        <div class="socials">
+          <a href="https://t.me/FINGER_MONKEY_PLS" target="_blank" class="social-btn" aria-label="Join our Telegram">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 5.27l-1.88 8.86c-.14.66-.76.96-1.21.62l-2.86-2.1-1.38.67c-.15.07-.28.11-.43.11-.29 0-.58-.23-.71-.53l-.97-3.16-2.54-1c-.49-.2-.49-.92.09-1.13l11.27-4.33c.49-.19 1.01.16.94.96z" fill="var(--fg)"/>
+            </svg>
+          </a>
+          <a href="https://x.com/monkeyfingerpls" target="_blank" class="social-btn" aria-label="Follow us on X">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18.24 4.15c.66.44 1.19 1.04 1.56 1.77L15.5 9.65l4.71 6.35c-.37.73-.9 1.33-1.56 1.77l-4.71-6.35-4.71 6.35c-.66-.44-1.19-1.04-1.56-1.77l4.71-6.35-4.71-6.35c.37-.73.9-1.33 1.56-1.77l4.71 6.35 4.71-6.35z" fill="var(--fg)"/>
+            </svg>
+          </a>
         </div>
-        <button class="btn ghost" id="donateCopy">Copy</button>
+        <div class="donation-wrap" style="display:flex;gap:12px;align-items:center;flex-wrap:wrap">
+          <div style="font-size:13px;color:var(--muted)">Donation (PulseChain):</div>
+          <div class="donation" id="donationAddr">
+            0x367bea4d6dc8d708dfb6be42f9415fb19869bd03
+          </div>
+          <button class="btn ghost" id="donateCopy">Copy</button>
+        </div>
       </div>
     </footer>
   </div>
