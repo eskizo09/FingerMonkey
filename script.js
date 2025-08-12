@@ -9,9 +9,12 @@ const contractEl = document.getElementById('contractAddress');
 const donateCopy = document.getElementById('donateCopy');
 const donationEl = document.getElementById('donationAddr');
 const buyBtn = document.getElementById('buyBtn');
+const copyBtnStory = document.getElementById('copyBtnStory');
+const contractElStory = document.getElementById('contractAddressStory');
 
 contractEl.textContent = CONTRACT_ADDRESS;
 donationEl.textContent = DONATION_ADDRESS;
+contractElStory.textContent = CONTRACT_ADDRESS;
 
 // Función copiar
 async function copyToClipboard(text, triggerBtn){
@@ -27,6 +30,7 @@ async function copyToClipboard(text, triggerBtn){
 
 copyBtn.addEventListener('click', ()=> copyToClipboard(CONTRACT_ADDRESS, copyBtn));
 donateCopy.addEventListener('click', ()=> copyToClipboard(DONATION_ADDRESS, donateCopy));
+copyBtnStory.addEventListener('click', ()=> copyToClipboard(CONTRACT_ADDRESS, copyBtnStory));
 
 // Botón de compra
 buyBtn.addEventListener('click', ()=> {
