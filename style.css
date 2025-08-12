@@ -112,6 +112,50 @@ body{
   object-fit:contain;
 }
 
+.story{
+  padding:36px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  margin-bottom:36px;
+}
+.story h2{
+  font-weight:800;
+  font-size:36px;
+  margin:0 0 16px 0;
+}
+.subheadline{
+  font-size:24px;
+  font-weight:600;
+  color:var(--accent);
+  margin:0 0 12px 0;
+}
+.intro{
+  font-size:18px;
+  color:var(--fg);
+  margin-bottom:16px;
+}
+.story-content{
+  max-width:60ch;
+}
+.story-content p{
+  margin:12px 0;
+}
+.story-content strong{
+  color:var(--fg);
+  font-weight:700;
+}
+.story-links{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  margin:16px 0;
+}
+.link-label{
+  font-size:14px;
+  color:var(--muted);
+}
+
 .roadmap{
   margin:28px 0;
   display:grid;
@@ -177,8 +221,12 @@ footer{
   .hero{grid-template-columns:1fr; text-align:center}
   .hero-right{order:-1;margin-bottom:12px}
   .coin{width:260px;height:260px}
+  .story{text-align:center}
+  .story-content{margin:0 auto}
 }
 @media (max-width:520px){
   .brand{font-size:34px}
   .coin{width:200px;height:200px}
+  .story h2{font-size:28px}
+  .subheadline{font-size:20px}
 }
