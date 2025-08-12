@@ -135,6 +135,37 @@ footer{
   flex-wrap:wrap;
   border-top:1px solid rgba(255,255,255,0.02);
 }
+.footer-right{
+  display:flex;
+  gap:24px;
+  align-items:center;
+  flex-wrap:wrap;
+}
+.socials{
+  display:flex;
+  gap:12px;
+}
+.social-btn{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:var(--glass);
+  padding:10px;
+  border-radius:8px;
+  text-decoration:none;
+}
+.social-btn svg{
+  fill:var(--fg);
+}
+.social-btn:hover{
+  background:rgba(255,255,255,0.1);
+}
+.donation-wrap{
+  display:flex;
+  gap:12px;
+  align-items:center;
+  flex-wrap:wrap;
+}
 .donation{
   font-family:monospace;
   background:rgba(255,255,255,0.02);
